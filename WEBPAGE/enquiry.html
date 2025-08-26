@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry — Safe Haven SA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<header class="site-header">
+  <div class="container topbar">
+    <a class="brand" href="index.html"><div class="logo">SH</div><span>Safe Haven SA</span></a>
+    <nav>
+      <a href="index.html">Index</a>
+      <a href="about.html">About</a>
+      <a href="servies.html">Services</a>
+      <a href="enquiry.html">Enquiry</a>
+      <a href="contact.html">Contact</a>
+      <a href="sitemap.html">Sitemap</a>
+    </nav>
+  </div>
+</header>
+
+<body>
+ 
+  <header class="site-header"> ... </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>Enquiry Form</h2>
+      <form>
+        <div class="row">
+          <div><label>Name<input required></label></div>
+          <div><label>Email<input type="email" required></label></div>
+        </div>
+
+        <label for="enquiryType">I'm interested in</label>
+        <select id="enquiryType">
+          <option value="general">General</option>
+          <option value="volunteer">Volunteering</option>
+          <option value="sponsor">Sponsorship</option>
+        </select>
+
+        <div data-section="volunteer" style="display:none">
+          <h3>Volunteer Details</h3>
+          <label>Skills<input></label>
+        </div>
+
+        <div data-section="sponsor" style="display:none">
+          <h3>Sponsorship Details</h3>
+          <label>Organisation<input></label>
+        </div>
+
+        <label>Message<textarea rows="5"></textarea></label>
+        <div class="actions"><button class="button">Submit</button></div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer"><div class="container inner">&copy; 2025 Safe Haven SA</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
